@@ -30,9 +30,12 @@
 
 html,
 body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+
 	height: 100%;
 	margin: 0;
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
 	background-color: #1B1B1B;
 	color: white;
