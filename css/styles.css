@@ -1,0 +1,202 @@
+/*!
+ * Project Name (https://based.academy)
+ * Copyright 2026 Cristian Ionescu 
+ * Licensed under MIT (https://github.com/bcionescu/based.academy/blob/main/LICENSE)
+ */
+
+@font-face {
+	font-family: 'iAWriterMono';
+	src: url('../fonts/iAWriterMonoS-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'iAWriterMono';
+	src: url('../fonts/iAWriterMonoS-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'iAWriterMono';
+	src: url('../fonts/iAWriterMonoS-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: #1B1B1B;
+	color: white;
+	font-size: 18px;
+	font-family: 'iAWriterMono', Consolas, Menlo, Monaco, monospace;
+	overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bordered-paragraph {
+  border: 1px solid #fd9e22;
+  background-color: transparent;
+
+  border-radius: 12px;
+  padding: 30px 25px;
+  margin: 10px 0;
+
+  display: block;
+  width: auto;
+}
+
+.button {
+  border: 1px solid #fd9e22;
+  color: #fd9e22;
+
+  border-radius: 24px;
+  padding: 16px 0px;
+  margin: 10px 0;
+
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  transition: 0.3s ease;
+  /* font-size: 16px; */
+  /* cursor: pointer; */
+}
+
+.button:after {
+  content: " ";
+  display: block;
+  flex: 1;
+}
+
+.left,
+.center {
+  flex: 1;
+  text-align: center;
+}
+
+.button:hover {
+    background-color: #FFE7B9;
+    text-decoration: none;
+}
+
+
+img.icon {
+  vertical-align: -5px;
+}
+
+img.icon-top {
+  vertical-align: top;
+}
+
+img.label {
+  vertical-align: -4px;
+}
+
+p {
+	text-align: justify;
+}
+
+#header {
+	min-height: 3rem;
+}
+
+.spacer {
+	height: 0.1em;
+}
+
+.top-spacer {
+	height: 2em;
+}
+
+.bottom-spacer {
+	height: 0.6em;
+}
+
+.container {
+	max-width: 30%;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+a.body-link {
+    color: #fd9e22;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(253, 158, 34, 0.3);
+    transition: border-color 0.3s ease;
+}
+
+a.body-link:hover {
+    border-bottom-color: #FFBE69;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	padding: 1rem;
+	margin-top: 2rem;
+}
+
+footer a {
+	color: #FFBE69;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer p {
+	display: inline;
+	margin: 0;
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+
+	.header,
+	.footer {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.container {
+		max-width: 75%;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+	}
+}
+
+/* Smaller tablets */
+@media screen and (max-width: 550px) {
+	h1 {
+		font-size: 45px;
+	}
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+
+	.header,
+	.footer {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.container {
+		max-width: 95%;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+	}
+}
