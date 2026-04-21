@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.bordered-paragraph {
+.bordered-box {
   border: 0.5px solid #fd9e22;
   background-color: #141414;
 
